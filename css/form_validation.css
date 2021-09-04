@@ -1,0 +1,188 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: url('images/office-625892.jpg') no-repeat;
+            background-size: cover;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 255, .3);
+        }
+        
+        .form-container {
+            width: 400px;
+            height: auto;
+            box-shadow: 2px 2px 4px black;
+            padding: 30px;
+            border-radius: 5px;
+            background: rgb(197, 200, 218);
+        }
+        
+        #form-content {
+            height: auto;
+            position: relative;
+        }
+        
+        .form-input {
+            height: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .form-input-content {
+            height: auto;
+            width: 100%;
+            position: relative;
+        }
+        
+        .form-input-content label {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 17px;
+            margin-top: 5px;
+        }
+        
+        .form-input-content input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid rgb(190, 186, 186);
+            background: rgb(235, 236, 241);
+        }
+        
+        .form-input-content input::placeholder {
+            color: rgb(184, 181, 178);
+        }
+        
+        .form-input-content input:focus {
+            outline: 0;
+            border: 1px solid rgb(102, 98, 98);
+            background: white;
+        }
+        
+        .form-input-content button {
+            border: 1px solid rgb(189, 189, 240);
+            margin: 8px 0 0 0;
+            padding: 10px;
+            width: 100%;
+            text-transform: uppercase;
+            background: rgb(189, 189, 240);
+            cursor: pointer;
+            /* background: rgb(79, 79, 235); */
+        }
+        
+        .form-input-content button:disabled {
+            cursor: not-allowed;
+        }
+        
+        #error {
+            width: auto;
+            position: absolute;
+            background: white;
+            font-size: 13px;
+            bottom: -7px;
+            left: 4px;
+            color: red;
+            animation: error infinite;
+            animation-timing-function: ease-in-out;
+            animation-play-state: running;
+            animation-duration: 0.5s;
+        }
+        
+        @keyframes error {
+            from {
+                background: rgb(252, 61, 61);
+                color: white;
+            }
+            to {
+                background: white;
+                color: red;
+            }
+        }
+        
+        .submited-form {
+            width: 100%;
+            display: none;
+        }
+        
+        #question {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            color: rgb(87, 87, 1);
+            text-align: center;
+            padding: 0 5px 0 5px;
+            font-size: 18px;
+        }
+        
+        .output {
+            width: 100%;
+            min-height: 50px;
+            padding: 0 10px 0 10px;
+            position: relative;
+        }
+        
+        .outputed-text {
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            word-wrap: break-word;
+        }
+        
+        #outputed-text-indicator {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        #view-pass {
+            color: red;
+            cursor: pointer;
+        }
+        
+        .output button {
+            font-size: 20px;
+            height: 30px;
+            width: 50px;
+            font-weight: bold;
+            color: white;
+            border-radius: 4px;
+            float: right;
+            cursor: pointer;
+        }
+        
+        #cancel-btn {
+            background: red;
+            border: 1px solid red;
+            margin-right: 5px;
+        }
+        
+        #submit-btn {
+            background: green;
+            border: 1px solid green;
+            /* color: rgb(18, 206, 18); */
+        }
+        
+        #password-output {
+            border: 1px solid transparent;
+            cursor: default;
+            overflow: visible;
+        }
+        
+        #password-output:focus {
+            outline: 0;
+            border: transparent;
+        }
+        /* color: rgb(18, 206, 18); */
